@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataHive | Analyst Community Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .header-clip {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-feather="database" class="h-8 w-8 text-indigo-600"></i>
+                        <span class="ml-2 text-xl font-bold text-gray-900">DataHive</span>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                    <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Challenges</a>
+                    <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Leaderboard</a>
+                    <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Community</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md text-sm font-medium text-white">Sign In</button>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <i data-feather="menu" class="block h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white header-clip">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    Showcase Your Skills. Solve Real Challenges.
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl">
+                    Join the community where data analysts grow their portfolios by solving real-world business challenges.
+                </p>
+                <div class="mt-10">
+                    <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-gray-50">
+                        Get Started
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    A better way to grow as a data analyst
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Feature 1 -->
+                    <div class="bg-gray-50 rounded-lg p-6 transition duration-300 ease-in-out card-hover" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i data-feather="award"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Real Challenges</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Solve actual business problems posted by companies to build a portfolio that matters.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-gray-50 rounded-lg p-6 transition duration-300 ease-in-out card-hover" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i data-feather="user"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Auto Portfolio</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Your profile automatically updates with every challenge you complete.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-gray-50 rounded-lg p-6 transition duration-300 ease-in-out card-hover" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i data-feather="trending-up"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Leaderboard</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Compete with other analysts and climb the ranks based on your contributions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Challenges Preview -->
+    <div class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Recent Challenges</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Put your skills to the test
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Challenge 1 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg transition duration-300 ease-in-out card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i data-feather="file-text" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Sales Data Cleaning</h3>
+                                <p class="mt-1 text-sm text-gray-500 truncate">Posted by TechCorp</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600">
+                                Clean and transform messy sales data from multiple sources into a unified format.
+                            </p>
+                            <div class="mt-4 flex">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">SQL</span>
+                                <span class="ml-1 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Python</span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <button type="button" class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                View Challenge
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 2 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg transition duration-300 ease-in-out card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i data-feather="bar-chart-2" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Customer Segmentation</h3>
+                                <p class="mt-1 text-sm text-gray-500 truncate">Posted by RetailX</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600">
+                                Analyze customer data and create meaningful segments for targeted marketing.
+                            </p>
+                            <div class="mt-4 flex">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800">Clustering</span>
+                                <span class="ml-1 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">Power BI</span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <button type="button" class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                View Challenge
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 3 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg transition duration-300 ease-in-out card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i data-feather="database" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Inventory Optimization</h3>
+                                <p class="mt-1 text-sm text-gray-500 truncate">Posted by LogiChain</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600">
+                                Develop a model to optimize inventory levels across multiple warehouses.
+                            </p>
+                            <div class="mt-4 flex">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Forecasting</span>
+                                <span class="ml-1 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">R</span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <button type="button" class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                View Challenge
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    View All Challenges
+                    <i data-feather="chevron-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-indigo-700">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    Trusted by data analysts worldwide
+                </h2>
+            </div>
+            <div class="mt-10 text-center">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+                    <div class="pt-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flow-root bg-indigo-800 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-indigo-700 mx-auto">
+                                    <i data-feather="users"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-white">Analysts</h3>
+                                <p class="mt-1 text-5xl font-extrabold text-white">5,000+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flow-root bg-indigo-800 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-indigo-700 mx-auto">
+                                    <i data-feather="briefcase"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-white">Companies</h3>
+                                <p class="mt-1 text-5xl font-extrabold text-white">200+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flow-root bg-indigo-800 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-indigo-700 mx-auto">
+                                    <i data-feather="check-circle"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-white">Challenges</h3>
+                                <p class="mt-1 text-5xl font-extrabold text-white">1,500+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl" data-aos="fade-right">
+                <span class="block">Ready to dive in?</span>
+                <span class="block text-indigo-600">Start solving challenges today.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0" data-aos="fade-left">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                        Get started
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <div>
+                    <div class="flex items-center">
+                        <i data-feather="database" class="h-8 w-8 text-indigo-600"></i>
+                        <span class="ml-2 text-xl font-bold text-gray-900">DataHive</span>
+                    </div>
+                    <p class="mt-4 text-gray-500 text-sm">
+                        The community where data analysts showcase their skills and solve real business challenges.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 lg:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-700 tracking-wider uppercase">For Analysts</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Browse Challenges</a></li>
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Leaderboard</a></li>
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Create Profile</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-700 tracking-wider uppercase">For Companies</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Post Challenges</a></li>
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Find Talent</a></li>
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Pricing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-700 tracking-wider uppercase">Legal</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Privacy</a></li>
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Terms</a></li>
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-700 tracking-wider uppercase">Connect</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">Twitter</a></li>
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">LinkedIn</a></li>
+                                <li><a href="#" class="text-base text-gray-500 hover:text-gray-900">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-200 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 DataHive. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
